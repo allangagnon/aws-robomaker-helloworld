@@ -1,23 +1,11 @@
 # AWS RoboMaker Builder Session - Hello World
 
 
-## Preparation
-
-### Instructor Preparation
-
-1. Create 10 environments and 10 IAM users, and share the environments with users.
-2. Deploy RoboMaker-Common and CertGenerator
-3. Setup WiFi connection for all robots.
-
- For each robot, print robot name, IP address on paper.
- 1. laminate iam user name , robot name, IP, and leave the password field empty, so we can wipe and write on it before each session.
-
-
 ## Instructions
 
 ### Get Ready
 
-1. Clone the repository from: https://github.com/mark-gu/aws-robomaker-helloworld.git
+1. Clone the repository from: https://github.com/allangagnon/aws-robomaker-helloworld.git
 
 2. Navigate to "...\aws-robomaker-helloworld\infrastructure\robomaker\\**cert_generator**", compress all files into a ZIP archive named **cert_generator.zip**
 
