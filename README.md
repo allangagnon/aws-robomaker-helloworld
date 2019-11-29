@@ -3,6 +3,10 @@
 
 ## Instructions
 
+## Download Base Image
+
+1. Navigate to "http://afg-baseimage-share.s3-website-us-east-1.amazonaws.com/" to download base image.
+
 ### Get Ready
 
 1. Clone the repository from: https://github.com/allangagnon/aws-robomaker-helloworld.git
