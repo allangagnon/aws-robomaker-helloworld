@@ -9,7 +9,7 @@
 
 ### Get Ready
 
-1. Clone the repository from: https://github.com/allangagnon/aws-robomaker-helloworld.git
+1. Clone this repository from: https://github.com/allangagnon/aws-robomaker-helloworld.git
 
 2. Navigate to "...\aws-robomaker-helloworld\infrastructure\robomaker\\**cert_generator**", compress all files into a ZIP archive named **cert_generator.zip**
 
