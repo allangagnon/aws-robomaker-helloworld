@@ -213,6 +213,38 @@
 
 ### Deploy the ROS Application
 
+## Testing JetBot
+
+Next, let's check that the different components of the robot are working under ROS.
+
+First open a new terminal, and start roscore
+
+$ roscore
+
+## Running the Motors
+
+Open a new terminal, and start the jetbot_motors node:
+
+$ rosrun jetbot_ros jetbot_motors.py
+
+The jetbot_motors node will listen on the following topics:
+
+    /jetbot_motors/cmd_dir relative heading (degree [-180.0, 180.0], speed [-1.0, 1.0])
+    /jetbot_motors/cmd_raw raw L/R motor commands (speed [-1.0, 1.0], speed [-1.0, 1.0])
+    /jetbot_motors/cmd_str simple string commands (left/right/forward/backward/stop)
+
+    Note: currently only cmd_str method is implemented.
+
+## Test Motor Commands
+
+Open a new terminal, and run some test commands:
+
+$ rostopic pub /jetbot_motors/cmd_str std_msgs/String --once "forward"
+$ rostopic pub /jetbot_motors/cmd_str std_msgs/String --once "backward"
+$ rostopic pub /jetbot_motors/cmd_str std_msgs/String --once "left"
+$ rostopic pub /jetbot_motors/cmd_str std_msgs/String --once "right"
+$ rostopic pub /jetbot_motors/cmd_str std_msgs/String --once "stop"
+
 ### Clean up
 
 1. Remove certs, config
